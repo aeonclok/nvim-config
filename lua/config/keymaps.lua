@@ -29,7 +29,24 @@ vim.keymap.set("n", "ä", require("substitute").operator, { noremap = true })
 vim.keymap.set("n", "ää", require("substitute").line, { noremap = true })
 vim.keymap.set("n", "Ä", require("substitute").eol, { noremap = true })
 vim.keymap.set("x", "ä", require("substitute").visual, { noremap = true })
-vim.keymap.del("n", "<Up>")
+
+-- Disable arrow keys in normal, visual, and insert modes
+local opts = { noremap = true, silent = true }
+
+vim.keymap.set("n", "<Up>", "<Nop>", opts)
+vim.keymap.set("n", "<Down>", "<Nop>", opts)
+vim.keymap.set("n", "<Left>", "<Nop>", opts)
+vim.keymap.set("n", "<Right>", "<Nop>", opts)
+
+-- vim.keymap.set("i", "<Up>", "<Nop>", opts)
+-- vim.keymap.set("i", "<Down>", "<Nop>", opts)
+-- vim.keymap.set("i", "<Left>", "<Nop>", opts)
+-- vim.keymap.set("i", "<Right>", "<Nop>", opts)
+--
+-- vim.keymap.set("v", "<Up>", "<Nop>", opts)
+-- vim.keymap.set("v", "<Down>", "<Nop>", opts)
+-- vim.keymap.set("v", "<Left>", "<Nop>", opts)
+-- vim.keymap.set("v", "<Right>", "<Nop>", opts)
 -- Helper function to swap two keys and their variants globally, excluding insert, command, and terminal modes
 local function swap_keys_with_modifiers(key1, key2)
   local modes = { "n", "v", "o", "x", "s" }
