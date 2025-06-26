@@ -29,7 +29,7 @@ vim.keymap.set("n", "ä", require("substitute").operator, { noremap = true })
 vim.keymap.set("n", "ää", require("substitute").line, { noremap = true })
 vim.keymap.set("n", "Ä", require("substitute").eol, { noremap = true })
 vim.keymap.set("x", "ä", require("substitute").visual, { noremap = true })
-
+vim.keymap.del("n", "<Up>")
 -- Helper function to swap two keys and their variants globally, excluding insert, command, and terminal modes
 local function swap_keys_with_modifiers(key1, key2)
   local modes = { "n", "v", "o", "x", "s" }
