@@ -62,19 +62,24 @@ return {
           overlay2 = "#928374", -- Gruvbox Material (bg3) - Comments, delimiters
 
           overlay1_original = "#8087a2", -- hsl(228deg, 15%, 57%) - Slightly dimmer overlay
-          overlay1 = "#458588", -- Gruvbox Material (fg5) - Dimmer text, UI elements
+          -- overlay1 = "#458588", -- Gruvbox Material (fg5) - Dimmer text, UI elements
+          overlay1 = "#7c6f64",
 
           overlay0_original = "#6e738d", -- hsl(230deg, 12%, 49%) - Even dimmer overlay
-          overlay0 = "#458588", -- Gruvbox Material (bg_current_word) - Background highlights
+          -- overlay0 = "#458588", -- Gruvbox Material (bg_current_word) - Background highlights
+          overlay0 = "#665c54",
 
           surface2_original = "#5b6078", -- hsl(230deg, 14%, 41%) - UI elements, line numbers
-          surface2 = "#458588", -- Gruvbox Material (bg4) - UI elements, line numbers
+          -- surface2 = "#458588", -- Gruvbox Material (bg4) - UI elements, line numbers
+          surface2 = "#504945",
 
           surface1_original = "#494d64", -- hsl(231deg, 16%, 34%) - Darker UI elements
           surface1 = "#458588", -- Gruvbox Material (bg_current_word) - Background highlights
+          -- surface1 = "#3c3836",
 
           surface0_original = "#363a4f", -- hsl(230deg, 19%, 26%) - Background highlight
-          surface0 = "#458588", -- Gruvbox Material (bg0) - Background
+          -- surface0 = "#458588", -- Gruvbox Material (bg0) - Background
+          surface0 = "#32302f",
 
           base_original = "#24273a", -- hsl(232deg, 23%, 18%) - Main background
           base = "#1d2021", -- Gruvbox Material (bg1) - Main background

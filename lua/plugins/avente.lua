@@ -17,6 +17,7 @@ return {
   opts = {
     -- add any opts here
     -- for example
+    mode = "legacy",
     provider = "claude",
     providers = {
       claude = {
@@ -25,7 +26,7 @@ return {
         timeout = 30000, -- Timeout in milliseconds
         extra_request_body = {
           temperature = 0.75,
-          max_tokens = 8192,
+          max_tokens = 4092,
         },
       },
     },
