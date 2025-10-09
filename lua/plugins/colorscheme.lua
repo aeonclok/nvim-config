@@ -4,6 +4,7 @@ return {
     lazy = true,
     name = "catppuccin",
     priority = 1000,
+    version = "v1.11.0",
     opts = {
       color_overrides = {
         all = {
