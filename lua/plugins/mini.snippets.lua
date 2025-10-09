@@ -1,7 +1,7 @@
 -- In ~/.config/nvim/lua/plugins/mini.snippets.lua
 return {
   {
-    "echasnovski/mini.snippets",
+    "nvim-mini/mini.snippets",
     opts = function(_, opts)
       local gen_loader = require("mini.snippets").gen_loader
 

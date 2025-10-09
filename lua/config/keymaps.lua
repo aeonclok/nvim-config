@@ -25,6 +25,8 @@
 --   return ":m '>+" .. count .. "<CR>gv=gv"
 -- end, { noremap = true, silent = true, expr = true })
 
+vim.keymap.set("n", "<leader>bb", "<cmd>CopyFile<CR>", { desc = "Copy File" })
+vim.keymap.set("n", "<leader>ba", "<cmd>CopyOpenBuffers<CR>", { desc = "Copy Open Buffers" })
 vim.keymap.set("n", "ä", require("substitute").operator, { noremap = true })
 vim.keymap.set("n", "ää", require("substitute").line, { noremap = true })
 vim.keymap.set("n", "Ä", require("substitute").eol, { noremap = true })
